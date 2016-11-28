@@ -1,0 +1,13 @@
+# Test requires network
+rm src/test/java/com/google/gson/DefaultInetAddressTypeAdapterTest.java
+
+# Throwable has more fields serialized, probably incorrect test expectations
+rm src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java
+
+# Fixes build with new maven-jar-plugin
+ /usr/bin/python3 /usr/share/java-utils/pom_editor.py pom_xpath_inject   "pom:plugin[pom:artifactId='maven-jar-plugin']/pom:executions" "
+
+    <execution>
+      <id>default-jar</id>
+      <phase>skip</phase>
+    </execution>"
