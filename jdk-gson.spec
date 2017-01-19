@@ -4,7 +4,7 @@
 #
 Name     : jdk-gson
 Version  : 2.3.1
-Release  : 2
+Release  : 3
 URL      : https://github.com/google/gson/archive/gson-2.3.1.tar.gz
 Source0  : https://github.com/google/gson/archive/gson-2.3.1.tar.gz
 Summary  : No detailed summary available
